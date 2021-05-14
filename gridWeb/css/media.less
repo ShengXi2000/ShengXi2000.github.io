@@ -1,0 +1,175 @@
+@media screen and (max-width:1024px){
+    .navBox{
+        display: none !important;
+    }
+    nav{
+        grid-template-columns: 1fr 50px !important;
+    }
+    .bars{
+        display: block !important;
+    }
+
+    // 关于我们板块缩小
+    .features{
+        grid-template-rows: repeat(3,1fr) !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    
+    .set_img{
+        .img{
+            width: 33% !important;
+        }
+        .img:nth-child(3),.img:nth-child(6){
+            width: 34% !important;
+        }
+    }
+
+    // 服务流程板块缩小
+        .service_blocks{
+            grid-template-rows: repeat(3,1fr) !important;
+            grid-template-columns: 1fr 1fr !important;
+        }
+
+    // 团队介绍板块缩小
+    .team_users{
+        grid-template-rows: repeat(2,1fr) !important;
+        grid-template-columns: repeat(2,1fr) !important;
+        .user{
+            height: 100%;
+        }
+    }
+    
+
+    // 数据板块缩小
+    #data{
+        background-size: 180%;
+        .data_box{
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: 1fr 1fr;
+        }
+        i.fa{
+            font-size: 2rem !important;
+        }
+        mark{
+            font-size: 1rem !important;
+        }
+        small{
+            font-size: 0.8rem !important;
+        }
+    }
+
+    // 公司动态板块缩小
+    .firm_blocks{
+        grid-template-rows: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    
+    // 页脚板块缩小
+    .footer_top{
+        grid-template-rows: 1fr auto !important;
+        grid-template-columns: 1fr repeat(2,auto) !important;
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    .navBox{
+        display: none !important;
+    }
+    nav{
+        grid-template-columns: 1fr 50px !important;
+    }
+    .bars{
+        display: block !important;
+    }
+
+
+
+    // 关于我们板块缩小
+    .features{
+        grid-template-rows: repeat(3,1fr) !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    // 成功案例板块缩小
+    #success{
+        #success_box{
+            .set_img{
+                .img{
+                    width: 50% !important;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // 服务流程板块缩小
+    .service_blocks{
+        grid-template-rows: repeat(6,1fr) !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    // 团队介绍板块缩小
+    .team_users{
+        grid-template-rows: repeat(4,25%) !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    // 数据板块缩小
+    #data{
+        background-size: 250% !important;
+        .data_box{
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: 1fr;
+        }
+        i.fa{
+            font-size: 2rem !important;
+        }
+        mark{
+            font-size: 1rem !important;
+        }
+        small{
+            font-size: 0.8rem !important;
+        }
+    }
+
+    // 公司动态板块缩小
+    .firm_blocks{
+        grid-template-rows: repeat(3,1fr) !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    
+    // 页脚板块缩小
+    .footer_top{
+        grid-template-rows: repeat(5,1fr) !important;
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+        align-items: center;
+        .footer_textbox:first-of-type{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:510px){
+    #success{
+        #success_box{
+            .set_img{
+                .img{
+                    width: 100% !important;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

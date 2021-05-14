@@ -1,0 +1,215 @@
+// 头部板块开始
+header{
+    width: calc(100vw - 17px);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .bg-black{
+        z-index: -1;
+        width: calc(100vw - 17px);
+        height: 100vh;
+        background-color: rgba(42, 42, 42, .55);
+        position: absolute;
+    }
+    .headerBanner{
+        position: absolute;
+        width: 200vw;
+        height: 100vh;
+        z-index: -2;
+        .seImg{
+            z-index: -2;
+            position: absolute;
+            background: no-repeat url(../images/people-in-couch-1024248.jpg) center/cover;
+            width: calc(100vw - 17px);
+            height: 100vh;
+        }
+        video{
+            z-index: -2;
+            position: relative;
+            
+            left: calc(100vw - 17px);
+            
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .he_nav{
+        height: 50px;
+        width: calc(100vw - 17px);
+        z-index: 2;
+    }
+
+    nav{
+        color: white;
+        z-index: 1;
+        display: grid;
+        width: 100%;
+        grid-template-rows: 50px;
+        grid-template-columns: 1fr 600px;
+        padding: 0 20px;
+        align-items: center;
+        .logo .nav{
+            font-size: 1.8rem;
+            font-weight: bold;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .navBox{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(6,1fr) .5fr;
+            justify-items: center;
+            align-items: center;
+            gap:10px;
+            .nav{
+                color: white;
+            }
+            .nav:hover{
+                cursor: pointer;
+            }
+        }
+        .bars{
+            justify-self: end;
+            font-size: 1.5rem;
+            display: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .bg1_table{
+        width: 70vw;
+        display: grid;
+        grid-template-columns: 70vw;
+        grid-template-rows:repeat(3,1fr);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        .bg1_h1{
+            font-size: 2.5rem;
+            font-weight: bold;
+            animation:show .4s both .6s;
+        }
+        .bg1_h2{
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: bold;
+            animation:show .4s both .9s;
+        }
+        .bg1_btn{
+            width: 100px;
+            height: 40px;
+            background-color: #ff4757;
+            color: white;
+            font-size: 1rem;
+            animation:show .4s both 1.3s;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .bg2_table{
+        width: 70vw;
+        display: grid;
+        grid-template-columns: 70vw;
+        grid-template-rows:repeat(3,1fr);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        gap: 20px;
+        display: none;
+        .bg2_h1{
+            font-size: 2.5rem;
+            font-weight: bold;
+            animation:show .4s both .6s;
+        }
+        .bg2_h2{
+            font-size: 1.2rem;
+            font-weight: bold;
+            animation:show .4s both .9s;
+        }
+        .bg2_btn{
+            width: 100px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: #ff4757;
+            color: white;
+            font-size: 1rem;
+            animation:show .4s both 1.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .point{
+        section:nth-child(1){
+            background-color: white;
+        } 
+    }
+
+    .arrow{
+        .arrowLeft,.arrowRight{
+            color: #ced6e0;
+            border: 1px solid #ced6e0;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 4px 8px;
+            position: absolute;
+            transform: translateY(-50%);
+            &:hover{
+                // background-color: #f5f6fa;
+                color: #f5f6fa;
+                border: 1px solid #f5f6fa;
+            }
+        }
+        .arrowLeft{
+            top: 50%;
+            left: 20px;
+        }
+        .arrowRight{
+            top: 50%;
+            right: 20px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .point{
+        position: absolute;
+        top: 96%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2,1fr);
+        gap: .3rem;
+        section{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #bdc3c7;
+        }
+    }
+}
+// header头部部分结束

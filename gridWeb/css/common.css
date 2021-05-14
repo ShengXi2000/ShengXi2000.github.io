@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+:root{
+    font-size: 15px;
+}
+.Underscore-red{
+    font-size: 2rem;
+    position: relative;
+}
+.Underscore-red::after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background-color: #ff6348;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+.active{
+    color: white !important;
+    background-color: #ff6348 !important;
+}
+mark{
+    background-color: rgba(0, 0, 0, 0);
+}

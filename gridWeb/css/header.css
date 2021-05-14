@@ -1,0 +1,202 @@
+header {
+  width: calc(100vw - 17px);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+header .bg-black {
+  z-index: -1;
+  width: calc(100vw - 17px);
+  height: 100vh;
+  background-color: rgba(42, 42, 42, 0.55);
+  position: absolute;
+}
+header .headerBanner {
+  position: absolute;
+  width: 200vw;
+  height: 100vh;
+  z-index: -2;
+}
+header .headerBanner .seImg {
+  z-index: -2;
+  position: absolute;
+  background: no-repeat url(../images/people-in-couch-1024248.jpg) center / cover;
+  width: calc(100vw - 17px);
+  height: 100vh;
+}
+header .headerBanner video {
+  z-index: -2;
+  position: relative;
+  left: calc(100vw - 17px);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+header .he_nav {
+  height: 50px;
+  width: calc(100vw - 17px);
+  z-index: 2;
+}
+header nav {
+  color: white;
+  z-index: 1;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 50px;
+  grid-template-columns: 1fr 600px;
+  padding: 0 20px;
+  align-items: center;
+}
+header nav .logo .nav {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+header nav .logo .nav:hover {
+  cursor: pointer;
+}
+header nav .navBox {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(6, 1fr) 0.5fr;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+header nav .navBox .nav {
+  color: white;
+}
+header nav .navBox .nav:hover {
+  cursor: pointer;
+}
+header nav .bars {
+  justify-self: end;
+  font-size: 1.5rem;
+  display: none;
+}
+header nav .bars:hover {
+  cursor: pointer;
+}
+header .bg1_table {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 70vw;
+  grid-template-rows: repeat(3, 1fr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+header .bg1_table .bg1_h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: show 0.4s both 0.6s;
+}
+header .bg1_table .bg1_h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  animation: show 0.4s both 0.9s;
+}
+header .bg1_table .bg1_btn {
+  width: 100px;
+  height: 40px;
+  background-color: #ff4757;
+  color: white;
+  font-size: 1rem;
+  animation: show 0.4s both 1.3s;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .bg1_table .bg1_btn:hover {
+  cursor: pointer;
+}
+header .bg2_table {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 70vw;
+  grid-template-rows: repeat(3, 1fr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  gap: 20px;
+  display: none;
+}
+header .bg2_table .bg2_h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: show 0.4s both 0.6s;
+}
+header .bg2_table .bg2_h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  animation: show 0.4s both 0.9s;
+}
+header .bg2_table .bg2_btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #ff4757;
+  color: white;
+  font-size: 1rem;
+  animation: show 0.4s both 1.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .bg2_table .bg2_btn:hover {
+  cursor: pointer;
+}
+header .point section:nth-child(1) {
+  background-color: white;
+}
+header .arrow .arrowLeft,
+header .arrow .arrowRight {
+  color: #ced6e0;
+  border: 1px solid #ced6e0;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 4px 8px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+header .arrow .arrowLeft:hover,
+header .arrow .arrowRight:hover {
+  color: #f5f6fa;
+  border: 1px solid #f5f6fa;
+}
+header .arrow .arrowLeft {
+  top: 50%;
+  left: 20px;
+}
+header .arrow .arrowRight {
+  top: 50%;
+  right: 20px;
+}
+header .arrow:hover {
+  cursor: pointer;
+}
+header .point {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.3rem;
+}
+header .point section {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bdc3c7;
+}
