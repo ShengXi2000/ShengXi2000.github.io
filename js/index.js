@@ -8,6 +8,7 @@ $(function () {
     isDolphin = typeof dolphin !== 'undefined';
     device = isAndorid ? 'android' : isIphone ? 'iphone' : isPad ? 'ipad':'unknow';
     console.log(device);
+    console.log(device);
 
     // let flag = true;
     // 为轮播图添加一个data编号
