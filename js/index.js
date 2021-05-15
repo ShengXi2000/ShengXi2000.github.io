@@ -1,5 +1,14 @@
 $(function () {
 
+    var UA = window.navigator.userAgent,
+    isAndorid = /android/i.test(UA),
+    isIphone = /iphone/i.test(UA),
+    //isIphone = /(?:iPhone)/.test(UA),
+    isPad = /ipad/i.test(UA),
+    isDolphin = typeof dolphin !== 'undefined';
+    device = isAndorid ? 'android' : isIphone ? 'iphone' : isPad ? 'ipad':'unknow';
+    console.log(device);
+
     // let flag = true;
     // 为轮播图添加一个data编号
     $('.headerBanner').children().each(function (index, value) {
