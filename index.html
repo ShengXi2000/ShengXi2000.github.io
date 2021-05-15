@@ -6,7 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GridWeb</title>
-    <link rel="stylesheet" href="css/allStyle.css">
+    <script>
+        // 检测用户设备信息，当非移动端时为unknow
+        var UA = window.navigator.userAgent,
+        isAndorid = /android/i.test(UA),
+        isIphone = /iphone/i.test(UA),
+        //isIphone = /(?:iPhone)/.test(UA),
+        isPad = /ipad/i.test(UA),
+        isDolphin = typeof dolphin !== 'undefined';
+        device = isAndorid ? 'android' : isIphone ? 'iphone' : isPad ? 'ipad':'unknow';
+        console.log(device);
+        let css = document.createElement("link");
+        css.setAttribute('rel','stylesheet');
+        if(device != "unknow"){
+            console.log("渲染PE端");
+            css.setAttribute('href','css/allStylePE.css');
+            document.head.appendChild(css);
+        }else{
+            console.log("渲染PC端");
+            css.setAttribute('href','css/allStyle.css');
+            document.head.appendChild(css);
+        }
+    </script>
 </head>
 
 <body>
